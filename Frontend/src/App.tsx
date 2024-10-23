@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AuthLayout from "./layout/AuthLayout";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import TermsPage from "./pages/TermsPage";
+import AuthPage from "./pages/AuthPage";
 import "./App.css";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import Protected from "./components/Auth/Protected";
@@ -21,6 +22,10 @@ function App() {
         {
           path: "/terms-of-service",
           element: <TermsPage />,
+        },
+        {
+          path: "/auth",
+          element: <AuthPage />,
         },
 
       ],
