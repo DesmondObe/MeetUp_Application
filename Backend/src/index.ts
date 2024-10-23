@@ -14,8 +14,10 @@ import { errorHandler } from "./middleware/error.m";
 import DB from "./utils/DB";
 import cookieParser from 'cookie-parser';
 
+
 /**routes */
 import authRouter from './routes/auth.r'
+import userRouter from './routes/user.r'
 
 dotenv.config();
 
@@ -42,7 +44,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // REST API routes for authentication
 app.use('/api/auth', authRouter)
-
+app.use('/api/users', userRouter)
 
 
 
