@@ -4,6 +4,7 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import TermsPage from "./pages/TermsPage";
 import AuthPage from "./pages/AuthPage";
 import SignupPage from"./pages/SignupPage";
+import LoginPage from "./pages/LoginPage";
 import GettingStartedPage from "./pages/GettingStartedPage";
 import "./App.css";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
@@ -40,6 +41,10 @@ function App() {
             <GettingStartedPage />
             // </Protected>
           ),
+        },
+        {
+          path: "/login",
+          element: <LoginPage />,
         },
 
       ],
