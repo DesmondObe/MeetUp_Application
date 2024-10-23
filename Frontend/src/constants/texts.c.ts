@@ -1,5 +1,5 @@
 export const landingPageConstants = {
-    title: "Meetup",
+    title: "Meetup Application",
     heading: "Connecting People with Similar interests around you.",
     buttonText: "Get Started"
 }

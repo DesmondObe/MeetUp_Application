@@ -3,6 +3,7 @@ import AuthLayout from "./layout/AuthLayout";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import TermsPage from "./pages/TermsPage";
 import AuthPage from "./pages/AuthPage";
+import SignupPage from"./pages/SignupPage";
 import "./App.css";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import Protected from "./components/Auth/Protected";
@@ -26,6 +27,10 @@ function App() {
         {
           path: "/auth",
           element: <AuthPage />,
+        },
+                {
+          path: "/signup",
+          element: <SignupPage />,
         },
 
       ],
