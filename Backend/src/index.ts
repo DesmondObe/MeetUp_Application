@@ -18,6 +18,7 @@ import cookieParser from 'cookie-parser';
 /**routes */
 import authRouter from './routes/auth.r'
 import userRouter from './routes/user.r'
+import eventRouter from './routes/event.r'
 
 dotenv.config();
 
@@ -39,13 +40,12 @@ app.use(express.json());
 app.use(cookieParser())
 app.use(express.urlencoded({ extended: true }));
 
-
 // app.options("*", cors());
 
 // REST API routes for authentication
 app.use('/api/auth', authRouter)
 app.use('/api/users', userRouter)
-
+app.use('/api/events', eventRouter)
 
 
 // GraphQL schema and resolvers
